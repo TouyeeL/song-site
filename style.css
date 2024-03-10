@@ -1,0 +1,79 @@
+:root {
+    /* main UI color */
+     --plyr-color-main: rgb(255, 255, 255);
+     /* audio controls background */
+     --plyr-audio-controls-background: gray;
+     /* audio controls color */
+     --plyr-audio-control-color: white;
+ 
+     --plyr-audio-control-color-hover: black;
+ 
+     --plyr-audio-progress-buffered-background: blue;
+ 
+     --plyr-audio-range-track-background: white;
+     
+     --plyr-font-family: sans-serif;
+     --plyr-font-size-time: 32px;
+ 
+     --plyr-tooltip-background: red;
+     --plyr-tooltip-color: black; 
+ 
+     --plyr-control-icon-size: 32px;
+   
+ }
+ 
+ /* Background */
+ body{
+   background-color: black;
+   font-family: "Open Sans", sans-serif;
+ }
+
+main{
+    background-color: rgba(70, 70, 70, 0.7); 
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+  
+  main img{
+    max-width: 100%;
+    display: block;
+    
+  }
+  
+  main h1{
+    color: white;
+    text-align: center;
+    
+  }
+  
+  main article{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  main article figure{
+    background: gray;
+    color: white;
+    padding: 1em;
+    margin: 0;
+  }
+  
+  /* Media Query */
+  @media screen and (max-width: 400px){
+    
+    root{
+      --plyr-font-size-time: 24px;
+      --plyr-control-icon-size: 24px;
+      
+    }
+    main h1 {
+      font-size: .85em;
+    }
+    main article{
+      flex-direction: column;
+    }
+    
+  }
