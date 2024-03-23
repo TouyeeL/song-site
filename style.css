@@ -24,8 +24,13 @@
  
  /* Background */
  body{
-   background-color: black;
+   background-image: url(r34\ gtr.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
    font-family: "Encode Sans Condensed", sans-serif;
+   
  }
 
 main{
